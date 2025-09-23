@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <titlle>IoAI quotes project generator</titlle>
   </head>
@@ -12,7 +13,7 @@
         <h1>Quotes about life and death</h1>
       </header>
       <main>
-        <form>
+        <form id="quote-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the quote"
@@ -21,13 +22,9 @@
             autocomplete="off"
             class="instructions"
           />
-          <input type="submit" class="submit-button"/>
+          <input type="submit" class="submit-button" />
         </form>
-        <div class="quote">
-          We are all debts owed to death
-          <br />
-          The idea is to die young as late as possible
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
       <footer>
         This project was coded by Ioa Sta and is open-sourced
