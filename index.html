@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <titlle>IoAI quotes project generator</titlle>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Quotes about life and death</h1>
+        <h1>Famous quotes</h1>
       </header>
       <main>
         <form id="quote-generator-form">
@@ -21,6 +22,7 @@
             required
             autocomplete="off"
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
