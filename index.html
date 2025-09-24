@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <titlle>IoAI quotes project generator</titlle>
+    <titlle></titlle>
   </head>
   <body>
     <div class="container">
@@ -14,26 +14,29 @@
         <h1>Famous quotes</h1>
       </header>
       <main>
-        <form id="quote-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-container">
+          <form id="quote-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a word and get a quote back"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Freedom, Love or Delulu</div>
+          <div class="quote-hidden" id="quote"></div>
+        </div>
       </main>
       <footer>
-        This project was coded by Ioa Sta and is open-sourced
+        This project was coded by Ioanna Stavrati, is open-sourced on
         <a
           href="https://github.com/IoaSta/AI-project-generator-"
           target="_blank"
-          >on GitHub</a
+          >GitHub</a
         >
         and is hosted on
         <a href="https://first-ai-project-generator.netlify.app/">Netlify</a>

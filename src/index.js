@@ -18,6 +18,10 @@ function generateQuote(event) {
 
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let quoteElement = document.querySelector("#quote");
+  quoteElement.classList.remove("hidden)");
+  quoteElement.innerHTML = `<div class="generating">⏳ thinking of a quote about ${instructionsInput.value}</div>`;
+
   axios.get(apiURL).then(displayQuote);
 }
 
